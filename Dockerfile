@@ -44,4 +44,3 @@ ENV PATH="${PATH}:/src/gcc-arm-none-eabi-9-2019-q4-major/bin"
 COPY --from=rust_build /usr/src/bestool/bestool/target/release/bestool /usr/local/bin/bestool
 COPY . /usr/src
 
-ENTRYPOINT ["/bin/bash"]
